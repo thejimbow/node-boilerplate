@@ -1,5 +1,5 @@
 import Koa from 'koa'
-import { router } from './router.js';
+import { router } from './router.js'
 
 export const bootstrap = () => {
   const app = new Koa()
@@ -7,6 +7,6 @@ export const bootstrap = () => {
   app.on('error', err => {
     console.log(err)
   })
-  
+
   return app
 }

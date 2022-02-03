@@ -33,6 +33,6 @@
     "standard": "^16.0.4"
   },
   "lint-staged": {
-    "*.js": "standard --fix && standard"
+    "*.js": "standard --fix"
   }
 }

@@ -8,7 +8,7 @@ export const router = new Router()
 
 const events = new EventEmitter2()
 const database = {
-  insert(data) {
+  insert (data) {
     console.log('data inserted in db.')
   }
 }

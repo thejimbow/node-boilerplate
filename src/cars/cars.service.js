@@ -1,5 +1,5 @@
 export const CarsService = ({ repository }) => ({
-  createCar(car) {
+  createCar (car) {
     repository.create(car)
   }
 })
