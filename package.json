@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "dotenv": "^16.0.0",
+    "eventemitter2": "^6.4.5",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0"
+  },
+  "name": "koa-test-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
