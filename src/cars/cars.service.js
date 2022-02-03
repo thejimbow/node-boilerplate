@@ -1,5 +1,8 @@
 export const CarsService = ({ repository }) => ({
   createCar (car) {
-    repository.create(car)
+    return repository.create(car)
+  },
+  findAllCars (query) {
+    return repository.find(query)
   }
 })
