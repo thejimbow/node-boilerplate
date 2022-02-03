@@ -6,7 +6,7 @@ const router = new Router({ prefix: '/cars' })
 export const CarsRouter = ({ service }) => {
   router.get('/', async (ctx) => {
     const cars = await service.findAllCars({})
-    ctx.body = { message: 'inserted', data: cars }
+    ctx.body = { message: 'found', data: cars }
   })
 
   router.post('/', koaBody(), async (ctx) => {
