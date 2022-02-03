@@ -1,23 +1,38 @@
 {
+  "name": "node-boilerplate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "dev": "nodemon -r dotenv/config index.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules -r dotenv/config jest"
+  },
+  "keywords": [
+    "nodejs",
+    "boilerplate",
+    "mongodb"
+  ],
+  "author": "Majid Shahbani",
+  "license": "MIT",
+  "description": "A simple boilerplate starter for node.js web applications",
   "dependencies": {
     "@koa/router": "^10.1.1",
     "dotenv": "^16.0.0",
     "eventemitter2": "^6.4.5",
     "koa": "^2.13.4",
-    "koa-body": "^4.2.0"
+    "koa-body": "^4.2.0",
+    "mongodb": "^4.3.1"
   },
-  "name": "koa-test-app",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "cross-env": "^7.0.3",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.3.3",
+    "nodemon": "^2.0.15",
+    "standard": "^16.0.4"
+  },
+  "lint-staged": {
+    "*.js": "standard --fix && standard"
   }
 }
