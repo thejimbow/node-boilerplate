@@ -5,10 +5,10 @@ export const BaseRepository = ({ database, sourceName }) => {
       return collection.insertOne(data)
     },
     find (query) {
-      return collection.find(query)
+      return collection.find(query).toArray()
     },
     findOne (query) {
-      return collection.findOne(query)
+      return collection.findOne(query).toArray()
     }
   }
 }
